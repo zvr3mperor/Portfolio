@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Oleg's portfolio of software, experiments, and ideas.">
+<title>Oleg / Portfolio</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+</head>
+<body>
+<canvas id="rain" aria-hidden="true"></canvas>
+<header class="topbar">
+  <a class="brand" href="#top"><span aria-hidden="true">⌘</span> OLEG<span class="brand-tail"> / PORTFOLIO</span></a>
+  <nav aria-label="Portfolio"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <button id="playback" type="button" hidden>Pause</button>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+<main id="top">
+  <section class="hero wrap" aria-labelledby="intro">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> PERSONAL PORTFOLIO</p>
+      <h1 id="intro">Hi, I’m <em>Oleg.</em></h1>
+      <p class="intro">I like building software and finding out how things work.</p>
+      <a class="action" href="#work">Explore my work</a>
+    </div>
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal-bar"><span class="lights"><i></i><i></i><i></i></span><span>portfolio.init</span><span>zsh</span></div>
+      <div class="terminal-body">
+        <p><b>~</b> ./portfolio</p>
+        <p class="muted">Loading project files…</p>
+        <div class="terminal-rule"></div>
+        <p><strong>03</strong> <span>project previews</span></p>
+        <p><strong>02</strong> <span>collaborator cursors</span></p>
+        <p class="terminal-ready">● <span id="status">Ready</span></p>
+      </div>
+    </div>
+    <p class="scroll-note" id="scroll-note" hidden>Scroll up to pause. Scroll down to resume.</p>
+  </section>
+  <section class="wrap work" id="work" aria-labelledby="work-title">
+    <p class="eyebrow">PROJECTS</p>
+    <h2 id="work-title">Selected work<span>.</span></h2>
+    <p class="section-note">Sample entries for the portfolio.</p>
+
+    <!-- Copy this entire article to add a project. Change the ID, image, frame, text, and optional color. -->
+    <article class="project frame-wire" id="edge-glow" style="--project-ink:#f6f0f2">
+      <figure class="project-image"><img src="./assets/edge-glow.webp" width="960" height="600" alt="Illustration of a macOS desktop with a colored edge glow and visualizer"></figure>
+      <div class="project-copy">
+        <p class="project-kind">MACOS · SWIFT</p>
+        <h3><span data-type>Edge Glow</span></h3>
+        <p class="description"><span data-type>A desktop overlay concept that turns the edges of a display into a canvas for light and sound.</span></p>
+      </div>
+    </article>
+
+    <article class="project frame-round" id="orbit-lab">
+      <figure class="project-image"><img src="./assets/orbit-lab.webp" width="960" height="600" alt="A violet orbital path diagram on a black grid"></figure>
+      <div class="project-copy">
+        <p class="project-kind">PHYSICS · SIMULATION</p>
+        <h3><span data-type>Orbit Lab</span></h3>
+        <p class="description"><span data-type>A concept for experimenting with gravity, changing initial conditions, and seeing how an orbit evolves.</span></p>
+      </div>
+    </article>
+
+    <article class="project frame-square" id="home-node">
+      <figure class="project-image"><img src="./assets/home-node.webp" width="960" height="600" alt="A dark dashboard mockup with green activity charts"></figure>
+      <div class="project-copy">
+        <p class="project-kind">LINUX · SELF-HOSTING</p>
+        <h3><span data-type>Home Node</span></h3>
+        <p class="description"><span data-type>A dashboard concept for keeping track of a small home server and the services running on it.</span></p>
+      </div>
+    </article>
+  </section>
+  <section class="wrap about" id="about">
+    <p class="eyebrow">ABOUT</p>
+    <h2>Always tinkering<span>.</span></h2>
+    <p>I’m interested in programming, physics, and the way small experiments turn into things you can actually use.</p>
+  </section>
+  <footer class="wrap footer" id="contact">
+    <div><p class="eyebrow">CONTACT</p><h2>Find me online<span>.</span></h2></div>
+    <!-- Replace YOUR_USERNAME with your GitHub username before publishing. -->
+    <a class="action" id="github" href="https://github.com/YOUR_USERNAME">GitHub</a>
+  </footer>
+</main>
+</body>
+</html>
